@@ -1,8 +1,8 @@
 Summary:	Portable and tiny constant database
-Summary:	Przeno¶na i ma³a sta³a baza danych
+Summary(pl):	Przeno¶na i ma³a sta³a baza danych
 Name:		pure-db
 Version:	1.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://pureftpd.sourceforge.net/puredb/%{name}-%{version}.tar.gz
@@ -66,8 +66,6 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS ChangeLog NEWS README
-
 %post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
@@ -76,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
