@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://pureftpd.sourceforge.net/puredb/%{name}-%{version}.tar.gz
+# Source0-md5:	1aaeb34c014f9a5ba85eea7bc3b57812
 URL:		http://pureftpd.sourceforge.net/puredb/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
