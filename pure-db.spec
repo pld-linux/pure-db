@@ -37,7 +37,7 @@ Requires:	%{name} = %{version}
 %description devel
 Header files and development documentation for pure-db.
 
-%description -l pl devel
+%description devel -l pl
 Pliki nag³ówkowe i dokumentacja do pure-db.
 
 %package static
@@ -49,11 +49,11 @@ Requires:	%{name}-devel = %{version}
 %description static
 Static pure-db library.
 
-%description -l pl static
+%description static -l pl
 Biblioteka statyczna pure-db.
 
 %prep
-%setup  -q 
+%setup  -q
 
 %build
 %configure
