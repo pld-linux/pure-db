@@ -5,8 +5,6 @@ Version:	1.2
 Release:	1
 License:	GPL
 Group:		Applications/Databases
-Group(de):	Applikationen/Dateibanken
-Group(pl):	Aplikacje/Bazy danych
 Source0:	http://pureftpd.sourceforge.net/puredb/%{name}-%{version}.tar.gz
 URL:		http://pureftpd.sourceforge.net/puredb/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,13 +32,6 @@ architekturami.
 Summary:	Header files and development documentation for pure-db
 Summary(pl):	Pliki nagЁСwkowe i dokumentacja do pure-db
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -53,13 +44,6 @@ Pliki nagЁСwkowe i dokumentacja do pure-db.
 Summary:	Static pure-db library
 Summary(pl):	Biblioteka statyczna pure-db
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
