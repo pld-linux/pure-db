@@ -2,12 +2,13 @@ Summary:	Portable and tiny constant database
 Summary(pl):	Przeno¶na i ma³a sta³a baza danych
 Name:		pure-db
 Version:	2.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://pureftpd.sourceforge.net/puredb/%{name}-%{version}.tar.gz
 # Source0-md5:	2fdf5771c169877218b1f83852f8cad4
 URL:		http://pureftpd.sourceforge.net/puredb/
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +34,7 @@ architekturami.
 Summary:	Header files and development documentation for pure-db
 Summary(pl):	Pliki nag³ówkowe i dokumentacja do pure-db
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and development documentation for pure-db.
@@ -45,7 +46,7 @@ Pliki nag³ówkowe i dokumentacja do pure-db.
 Summary:	Static pure-db library
 Summary(pl):	Biblioteka statyczna pure-db
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static pure-db library.
@@ -54,24 +55,24 @@ Static pure-db library.
 Biblioteka statyczna pure-db.
 
 %prep
-%setup  -q
+%setup -q
 
 %build
+cp -f /usr/share/automake/config.* .
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%post   -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
-
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post   -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
