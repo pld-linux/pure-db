@@ -1,12 +1,12 @@
 Summary:	Portable and tiny constant database
 Summary(pl):	Przeno¶na i ma³a sta³a baza danych
 Name:		pure-db
-Version:	1.2
-Release:	2
+Version:	2.1
+Release:	1
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://pureftpd.sourceforge.net/puredb/%{name}-%{version}.tar.gz
-# Source0-md5:	1aaeb34c014f9a5ba85eea7bc3b57812
+# Source0-md5:	2fdf5771c169877218b1f83852f8cad4
 URL:		http://pureftpd.sourceforge.net/puredb/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
