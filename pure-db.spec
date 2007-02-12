@@ -1,5 +1,5 @@
 Summary:	Portable and tiny constant database
-Summary(pl):	Przeno¶na i ma³a sta³a baza danych
+Summary(pl.UTF-8):   PrzenoÅ›na i maÅ‚a staÅ‚a baza danych
 Name:		pure-db
 Version:	2.1
 Release:	2
@@ -20,38 +20,38 @@ or binary key/data pairs of arbitrary sizes. Lookups are very fast
 multiple concurrent read access are supported, and databases can be up
 to 4 Gb long, and they are portable accross architectures.
 
-%description -l pl
-PureDB to zestaw bibliotek do tworzenia i odczytu sta³ych baz danych.
-Zarz±dzaj± one plikami z danymi, które zawieraj± tekst lub binarne
-pary klucz/dane okre¶lonych rozmiarów. Wyszukiwania s± bardzo szybkie
-(normalnie jeden dostêp do dysku by znale¼æ warto¶æ klucza), rozmiar
-bazy jest niewielki (1028 bajtów + 16 ekstra bajtów na jeden rekord),
-wiele równoczesnych odczytów z bazy jest obs³ugiwanych, bazy mog±
-osi±gaæ wielko¶æ do 4Gb, a ponadto s± one przeno¶ne pomiêdzy
+%description -l pl.UTF-8
+PureDB to zestaw bibliotek do tworzenia i odczytu staÅ‚ych baz danych.
+ZarzÄ…dzajÄ… one plikami z danymi, ktÃ³re zawierajÄ… tekst lub binarne
+pary klucz/dane okreÅ›lonych rozmiarÃ³w. Wyszukiwania sÄ… bardzo szybkie
+(normalnie jeden dostÄ™p do dysku by znaleÅºÄ‡ wartoÅ›Ä‡ klucza), rozmiar
+bazy jest niewielki (1028 bajtÃ³w + 16 ekstra bajtÃ³w na jeden rekord),
+wiele rÃ³wnoczesnych odczytÃ³w z bazy jest obsÅ‚ugiwanych, bazy mogÄ…
+osiÄ…gaÄ‡ wielkoÅ›Ä‡ do 4Gb, a ponadto sÄ… one przenoÅ›ne pomiÄ™dzy
 architekturami.
 
 %package devel
 Summary:	Header files and development documentation for pure-db
-Summary(pl):	Pliki nag³ówkowe i dokumentacja do pure-db
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe i dokumentacja do pure-db
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and development documentation for pure-db.
 
-%description devel -l pl
-Pliki nag³ówkowe i dokumentacja do pure-db.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe i dokumentacja do pure-db.
 
 %package static
 Summary:	Static pure-db library
-Summary(pl):	Biblioteka statyczna pure-db
+Summary(pl.UTF-8):   Biblioteka statyczna pure-db
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static pure-db library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna pure-db.
 
 %prep
