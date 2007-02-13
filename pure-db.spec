@@ -1,5 +1,5 @@
 Summary:	Portable and tiny constant database
-Summary(pl.UTF-8):   Przenośna i mała stała baza danych
+Summary(pl.UTF-8):	Przenośna i mała stała baza danych
 Name:		pure-db
 Version:	2.1
 Release:	2
@@ -32,7 +32,7 @@ architekturami.
 
 %package devel
 Summary:	Header files and development documentation for pure-db
-Summary(pl.UTF-8):   Pliki nagłówkowe i dokumentacja do pure-db
+Summary(pl.UTF-8):	Pliki nagłówkowe i dokumentacja do pure-db
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -44,7 +44,7 @@ Pliki nagłówkowe i dokumentacja do pure-db.
 
 %package static
 Summary:	Static pure-db library
-Summary(pl.UTF-8):   Biblioteka statyczna pure-db
+Summary(pl.UTF-8):	Biblioteka statyczna pure-db
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
